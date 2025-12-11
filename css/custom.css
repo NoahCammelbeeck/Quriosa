@@ -2,8 +2,11 @@
   /*|----------| colors |*/
   --primary-green: rgb(130, 191, 101);
   --secondary-green: rgb(87, 127, 68);
+  --secondary-green-transparent: rgba(87, 127, 68, 0.5);
   --details-green: rgb(34, 64, 58);
-  --cta-color: rgb(249, 34, 156);
+  --cta-pink: rgb(249, 34, 156);
+  --font-light: #fff;
+  --font-dark: #000;
 
   /*|----------| Fonts |*/
   /*| Sizes |*/

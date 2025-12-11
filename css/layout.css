@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+  /* outline: 1px solid #08f; */
 }
 /*| ---------- ---------- ---------- |*/
 body {
@@ -12,32 +13,24 @@ body {
   align-items: center;
   gap: 1rem;
   /*|Styling|*/
-}
-/*| ---------- ---------- |*/
-header,
-main,
-footer {
-  /*|Layout|*/
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*|Styling|*/
+  background-image: url(/assets/images/NY_Street_1920_Compressed.webp);
+  background-size: cover;
 }
 /*| ---------- ---------- |*/
 header {
   /*|Layout|*/
+  width: 100%;
   padding: 1rem 10%;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   justify-content: space-between;
+  align-items: center;
   /*|Styling|*/
   background-color: transparent 0.5 var(--primary-green);
   .logo_wrapper {
     /*|Layout|*/
-    padding: 0.5rem 2rem;
+    width: fit-content;
     /*|Styling|*/
     .logo {
       /*|Layout|*/
@@ -47,37 +40,56 @@ header {
   }
   a {
     /*|Layout|*/
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     /*|Styling|*/
     background-color: var(--primary-green);
+    color: var(--font-dark);
   }
   ul {
     /*|Layout|*/
+    height: 100%;
     width: 50%;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     /*|Styling|*/
     list-style: none;
-    li {
-      /*|Layout|*/
-      padding: 0.5rem 1rem;
-      /*|Styling|*/
-    }
   }
 }
 /*| ---------- |*/
 main {
   /*|Layout|*/
-  height: 75vh;
+  height: 80vh;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
   /*|Styling|*/
+  .main_content {
+    /*|Layout|*/
+    width: 25%;
+    margin-left: 10%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+    /*|Styling|*/
+    background-color: var(--secondary-green);
+  }
 }
 /*| ---------- |*/
 footer {
   /*|Layout|*/
-  padding: 2rem;
+  width: 100%;
+  padding: 1rem 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   /*|Styling|*/
-  background-color: var(--secondary-green);
+  background-color: var(--details-green);
+  color: var(--font-light);
 }
 /*| ---------- ---------- ---------- |*/
