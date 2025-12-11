@@ -1,0 +1,16 @@
+:root {
+  /* colors */
+  --primary-green: rgb(130, 191, 101);
+  --secondary-green: rgb(87, 127, 68);
+  --details-green: rgb(34, 64, 58);
+  --cta-color: rgb(249, 34, 156);
+
+  /* font sizes */
+  --h1-size: 48px;
+  --p-size: 18px;
+  --nav-li-size: 20px;
+  --cta-font-size: 128px;
+
+  /* borders */
+  --cta-borders: 1px;
+}
