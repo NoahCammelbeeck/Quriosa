@@ -19,24 +19,46 @@
 }
 
 :root {
-  /* colors */
+  /*|----------| colors |*/
   --prime-green: rgb(130, 191, 101);
   --secondary-green: rgb(87, 127, 68);
   --details-green: rgb(34, 64, 58);
   --cta-color: rgb(249, 34, 156);
 
-  /* font sizes */
-  --h1-size: 48px;
-  --p-size: 18px;
-  --nav-li-size: 20px;
-  --cta-font-size: 128px;
-
-  /* borders */
-  --cta-borders: 1px;
-
-  /* fonts */
+  /*|----------| fonts etc. |*/
+  /*| fonts |*/
   --p-font: "martel";
   --cta-font: "reenie";
   --nav-font: "maitree";
   --h1-font: "montserrat";
+  /*| font sizes |*/
+  --logo-size: 60px;
+  --h1-size: 48px;
+  --p-size: 18px;
+  --nav-li-size: 20px;
+  --cta-size: 128px;
+  /*| Definitions |*/
+  .logo {
+    font-size: var(--logo-size);
+    color: var(--primary-green);
+    font-weight: 600;
+  }
+  h1 {
+    font: var(--h1-font);
+    font-size: var(--h1-size);
+  }
+  p {
+    font: var(--p-font);
+    font-size: var(--p-size);
+  }
+  .nav_but {
+    font: var(--nav-font);
+    font-size: var(--nav-li-size);
+  }
+  .cta_but {
+    font: var(--cta-font);
+    font-size: var(--cta-size);
+  }
+  /*|----------| borders |*/
+  --cta-borders: 1px;
 }
