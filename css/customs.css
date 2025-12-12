@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "maitree";
+  src: url(../fonts/Maitree-Regular.woff);
+}
+
+@font-face {
+  font-family: "martel";
+  src: url(../fonts/MartelSans-Regular.woff);
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+
+@font-face {
+  font-family: "reenie";
+  src: url(../fonts/ReenieBeanie-Regular.woff);
+}
 
 :root {
   /* colors */
@@ -7,12 +26,17 @@
   --cta-color: rgb(249, 34, 156);
 
   /* font sizes */
---h1-size: 48px;
---p-size: 18px;
---nav-li-size: 20px;
---cta-font-size:128px;
+  --h1-size: 48px;
+  --p-size: 18px;
+  --nav-li-size: 20px;
+  --cta-font-size: 128px;
 
-/* borders */
---cta-borders: 1px;
+  /* borders */
+  --cta-borders: 1px;
 
+  /* fonts */
+  --p-font: "martel";
+  --cta-font: "reenie";
+  --nav-font: "maitree";
+  --h1-font: "montserrat";
 }
