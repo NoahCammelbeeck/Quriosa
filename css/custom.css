@@ -1,20 +1,42 @@
-:root {
-  /*|----------| colors |*/
-  --primary-green: rgb(130, 191, 101);
-  --secondary-green: rgb(87, 127, 68);
-  --secondary-green-transparent: rgba(87, 127, 68, 0.5);
-  --details-green: rgb(34, 64, 58);
-  --cta-pink: rgb(249, 34, 156);
-  --font-light: #fff;
-  --font-dark: #000;
+@font-face {
+  font-family: "maitree";
+  src: url(../fonts/Maitree-Regular.woff);
+}
 
-  /*|----------| Fonts |*/
-  /*| Sizes |*/
+@font-face {
+  font-family: "martel";
+  src: url(../fonts/MartelSans-Regular.woff);
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+
+@font-face {
+  font-family: "reenie";
+  src: url(../fonts/ReenieBeanie-Regular.woff);
+}
+
+:root {
+  /* colors */
+  --prime-green: rgb(130, 191, 101);
+  --secondary-green: rgb(87, 127, 68);
+  --details-green: rgb(34, 64, 58);
+  --cta-color: rgb(249, 34, 156);
+
+  /* font sizes */
   --h1-size: 48px;
   --p-size: 18px;
   --nav-li-size: 20px;
   --cta-font-size: 128px;
 
-  /*|----------| Borders |*/
+  /* borders */
   --cta-borders: 1px;
+
+  /* fonts */
+  --p-font: "martel";
+  --cta-font: "reenie";
+  --nav-font: "maitree";
+  --h1-font: "montserrat";
 }
