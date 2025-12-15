@@ -8,3 +8,8 @@ body {
   background-image: url("../images/bg/BG3.webp");
   background-size: cover;
 }
+
+.brinfo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
