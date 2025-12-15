@@ -7,13 +7,11 @@
 }
 
 .hero img {
-  width: 200px;
-  /* height: 50px; */
-  object-position: center;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 16 / 9; /* gør billedet aflangt */
+  object-fit: cover;
   padding: 15px;
-  /* aspect-ratio: 16 / 1;
-  height: 100%;
-  object-position: 70% center; */
 }
 
 @media (width > 675px) {
