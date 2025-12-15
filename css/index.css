@@ -7,6 +7,8 @@ body {
   /*|Styling|*/
   background-image: url("../images/bg/BG1.webp");
   background-size: cover;
+}
+
 .hero {
   /* color: white; */
   background-color: var(--secondary-green);
