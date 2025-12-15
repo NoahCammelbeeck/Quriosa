@@ -29,6 +29,13 @@ h1 {
   font-size: var(--h1-size);
 }
 
+h2 {
+  font-family: var(--cta-font);
+  font-size: var(--h1-size);
+  color: var(--cta-color);
+  text-align: center;
+}
+
 p {
   font-family: var(--p-font);
   font-size: var(--p-size);
@@ -40,4 +47,26 @@ p {
   border: 2px solid var(--secondary-green);
   width: 90%;
   padding: 10px;
+}
+
+.teaser1 {
+  background-color: var(--prime-green);
+  border: 2px solid var(--secondary-green);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px;
+  transition: 0.3s;
+  &:hover {
+    background-color: var(--cta-color);
+    color: var(--prime-green);
+  }
+}
+
+.teaser1 a:hover h2 {
+  color: var(--prime-green);
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
