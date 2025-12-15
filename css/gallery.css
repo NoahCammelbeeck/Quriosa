@@ -1,0 +1,12 @@
+.galpics {
+  display: grid;
+  grid-template-columns: repeat(auto-fi, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.galpics img {
+  width: 100%;
+  display: block;
+}
+
