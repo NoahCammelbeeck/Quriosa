@@ -25,6 +25,20 @@ body {
   padding: 15px;
 }
 
+.teaser1 {
+  margin-top: 16em;
+}
+
+.teasertext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teasertext h2 {
+  transform: rotate(-26deg);
+}
+
 @media (width > 675px) {
   .hero {
     display: grid;
