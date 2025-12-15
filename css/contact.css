@@ -8,3 +8,8 @@ body {
   background-image: url("../images/bg/BG4.webp");
   background-size: cover;
 }
+
+.infotext {
+  margin-bottom: 28em;
+  margin-top: 5em;
+}

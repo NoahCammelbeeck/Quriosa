@@ -1,19 +1,27 @@
+.infotext {
+  margin-bottom: 7em;
+}
+
 .galpics {
   max-width: 1200px;
   margin: 0 auto; /* centrerer galleriet */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* klassisk 4 kolonner */
-  gap: 20px;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); klassisk 4 kolonner */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
 }
 
 .galpics img {
-  width: 100%;
+  max-width: 200px;
   height: 100%;
   object-fit: cover;
   display: block;
+  aspect-ratio: 1 / 1;
   border-radius: var(--cta-borders);
-  filter: grayscale(0.8);
+  filter: grayscale(0.7);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--secondary-green);
   transition: 0.3s;
   &:hover {
     filter: none;
