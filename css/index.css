@@ -27,6 +27,8 @@ body {
 
 .teaser1 {
   margin-top: 16em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .teasertext {

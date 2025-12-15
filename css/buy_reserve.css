@@ -9,7 +9,42 @@ body {
   background-size: cover;
 }
 
-.brinfo {
+.grid2x1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+
+.teaser2 {
+  background-color: none;
+  transition: 0.3s;
+}
+
+.teaser2 a {
+  display: grid;
+}
+
+.teaser2 a img {
+  grid-area: 1 / 1;
+  width: 100%;
+  z-index: 1;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0.3);
+  transition: 0.3s;
+  border-radius: var(--cta-borders);
+  &:hover {
+    filter: none;
+  }
+}
+
+.teaser2 a h2 {
+  grid-area: 1/1;
+  place-self: center;
+  text-align: center;
+  z-index: 2;
+  transform: rotate(-23deg);
+  transition: 0.3s;
+  &:hover {
+    color: var(--prime-green);
+  }
 }
