@@ -2,6 +2,13 @@
   font-family: var(--h1-font);
   font-size: var(--h1-size);
   color: var(--prime-green);
+  display: inline-block;
+}
+
+.logo img {
+  display: block;
+  width: clamp(90px, 12vw, 220px);
+  height: auto;
 }
 
 header li {
