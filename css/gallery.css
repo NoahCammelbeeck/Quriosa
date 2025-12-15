@@ -21,3 +21,12 @@
   filter: none;
   width: 104%;
 }
+body {
+  /*|Layout|*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /*|Styling|*/
+  background-image: url("../images/bg/BG2.webp");
+}

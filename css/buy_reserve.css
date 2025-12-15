@@ -1,4 +1,10 @@
-.brinfo {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+body {
+  /*|Layout|*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /*|Styling|*/
+  background-image: url("../images/bg/BG3.webp");
+  background-size: cover;
 }
