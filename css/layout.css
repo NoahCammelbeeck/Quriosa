@@ -6,16 +6,7 @@
   /* outline: 1px solid #08f; */
 }
 /*| ---------- ---------- ---------- |*/
-body {
-  /*|Layout|*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  /*|Styling|*/
-  background-image: url(/assets/images/NY_Street_1920_Compressed.webp);
-  background-size: cover;
-}
+
 /*| ---------- ---------- |*/
 header {
   /*|Layout|*/

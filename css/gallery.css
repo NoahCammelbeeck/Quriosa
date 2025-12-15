@@ -13,3 +13,12 @@
   display: block;
   border-radius: var(--cta-borders);
 }
+body {
+  /*|Layout|*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /*|Styling|*/
+  background-image: url("../images/bg/BG2.webp");
+}
