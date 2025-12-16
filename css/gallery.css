@@ -38,4 +38,6 @@ body {
   gap: 1rem;
   /*|Styling|*/
   background-image: url("../images/bg/BG2.webp");
+  background-size: cover;
+  background-position: center;
 }
