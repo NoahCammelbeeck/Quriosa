@@ -1,0 +1,39 @@
+body {
+  /*|Layout|*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /*|Styling|*/
+  background-image: url("../images/bg/BG5.webp");
+  background-size: cover;
+}
+
+main {
+  max-width: 70%;
+  height: 70vh;
+  margin: 5%;
+}
+
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.infotext {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.infotext h1 {
+  margin: 0 auto;
+}
+
+.soerenfalk {
+  width: 90%;
+  height: auto;
+  filter: brightness(85%);
+}
