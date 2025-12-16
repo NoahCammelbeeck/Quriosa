@@ -10,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5em;
+  justify-content: center;
 }
 
 .galpics img {
@@ -19,9 +20,9 @@
   display: block;
   aspect-ratio: 1 / 1;
   border-radius: var(--cta-borders);
-  filter: grayscale(0.7);
+  filter: grayscale(0.5);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  border: 2px solid var(--secondary-green);
+  border: 2px solid #000000;
   transition: 0.3s;
   &:hover {
     filter: none;
