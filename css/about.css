@@ -12,6 +12,7 @@ body {
 main {
   max-width: 70%;
   height: 70vh;
+  margin: 5%;
 }
 
 .grid1_1 {
@@ -26,11 +27,13 @@ main {
   display: flex;
   flex-direction: column;
 }
-.infotext {
+
+.infotext h1 {
+  margin: 0 auto;
 }
 
 .soerenfalk {
-  width: 85%;
+  width: 90%;
   height: auto;
   filter: brightness(85%);
 }
