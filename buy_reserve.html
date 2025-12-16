@@ -54,37 +54,95 @@
       <div class="grid2x1">
         <div class="infotext">
           <p>
-            På denne side kan du reservere varer og sælge dine egne. Hvis du
-            gerne vil sælge noget, bedes du først se Vi efterspørger, hvor der
-            kan ses hvilke varer der ledes efter og hvilke ikke ønskes. Skulle
-            din vare ikke være på siden, men du tror stadig den vil have
-            interesse, skal du selvfølgelig være velkommen til at skrive
-            alligevel.
+            På denne side kan du reservere varer og sælge dine egne. Hvis du gerne vil sælge noget, bedes du først se Vi efterspørger, hvor der kan ses hvilke varer der ledes efter og hvilke ikke
+            ønskes. Skulle din vare ikke være på siden, men du tror stadig den vil have interesse, skal du selvfølgelig være velkommen til at skrive alligevel.
           </p>
           <p>Alle køb foregår ved fysisk fremmøde i butikken.</p>
-          <p>
-            BEMÆRK mht. reservationer: Da varesortimentet i Quriosa altid er i
-            bevægelse, er det ikke sikkert at varen stadig findes i butikken,
-            hvis den er blevet set online.
-          </p>
+          <p>BEMÆRK mht. reservationer: Da varesortimentet i Quriosa altid er i bevægelse, er det ikke sikkert at varen stadig findes i butikken, hvis den er blevet set online.</p>
         </div>
         <p class="infotext">
-          Generelt handles der i Quriosa med genbrug fra 1920’erne til
-          1980’erne. Fokusset er på varer i små- og mellemstørrelser, som f.eks
-          stole, lamper og nips. Priserne er rettet mod det budgetvenlige, så
-          det meste i butikken er under 1000kr, dog med enkelte undtagelser.
+          Generelt handles der i Quriosa med genbrug fra 1920’erne til 1980’erne. Fokusset er på varer i små- og mellemstørrelser, som f.eks stole, lamper og nips. Priserne er rettet mod det
+          budgetvenlige, så det meste i butikken er under 1000kr, dog med enkelte undtagelser.
         </p>
       </div>
       <div class="grid2x1">
-        <div>
-          <!-- form skal være her -->
-        </div>
+        <section class="form">
+          <h3>Nødvendige informationer</h3>
+          <form autocapitalize="words">
+            <div class="form_question" id="form_qustion_purpose">
+              <label for="form_purpose">Jeg vil gerne:</label>
+              <fieldset name="form_purpose">
+                <div class="form_radio">
+                  <input type="radio" name="form_purpose_radio" id="radio_reserve" value="Reservation" />
+                  <label class="sublabel" for="radio_reserve">Reservere</label>
+                </div>
+                <div class="form_radio">
+                  <input type="radio" name="form_purpose_radio" id="radio_sell" value="Salg" />
+                  <label class="sublabel" for="radio_sell">Sælge</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form_section_dependent" id="form_section_sell">
+              <div class="form_question" id="form_question_sell">
+                <div class="form_subquestion" id="item_description">
+                  <label for="form_item_description">Beskrivelse af genstand:</label>
+                  <p class="form_info">Beskriv genstanden, med fokus på de vigtigeste faktorer - Med 300 tegn</p>
+                  <textarea name="form_item_description" id="form_description" placeholder="F.eks: Et let slidt antikt træbord 50cm x 50cm, med en højde på 60cm"></textarea>
+                </div>
+                <div class="form_subquestion" id="item_image">
+                  <label for="form_item_image">Billede af genstand:</label>
+                  <p class="form_info">Vælg et billede der viser mest muligt af genstanden. Er der skader, der ikke kan ses på billedet, skal du gøre det klart i beskrivelsen.</p>
+                  <div id="form_image_wrapper">
+                    <input type="file" name="form_item_image" id="form_image" accept=".jpg, .webp, .png, .pdf, .heic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form_section_dependent" id="form_section_reserve">
+              <div class="form_question" id="form_question_reserve">
+                <label for="">Reservation af genstand(e):</label>
+                <p class="form_info">Vælg de genstande du ønsker at reservere fra butikkens inventar, ved at søge på deres varenummer herunder:</p>
+                <div id="searchbar">
+                  <input type="search" list="item_numbers" pattern="[0-9]{4}" placeholder="Varenummer på 4 cifre: XXXX" />
+                  <button id="form_question_reserve_button">Søg</button>
+                </div>
+                <datalist id="item_numbers">
+                  <option value="1234"></option>
+                  <option value="2345"></option>
+                  <option value="3456"></option>
+                  <option value="4567"></option>
+                  <option value="5678"></option>
+                  <option value="6789"></option>
+                  <option value="6969"></option>
+                </datalist>
+              </div>
+            </div>
+            <div class="form_question" id="form_question_contact">
+              <label for="form_question_contact">Kontaktinformationer:</label>
+              <label class="sublabel" for="form_name">Navn</label>
+              <input type="text" name="form_name" />
+              <label class="sublabel" for="form_phone">Telefonnummer</label>
+              <input type="tel" name="form_phone" />
+              <label class="sublabel" for="form_mail">Mailadresse</label>
+              <input type="email" name="form_mail" />
+            </div>
+            <button>Submit</button>
+          </form>
+          <section id="summary">
+            <p>Summary</p>
+            <div id="summary_form">
+              <p>Formål:<span id="summary_purpose"></span></p>
+              <p>Beskrivelse:<span id="summary_description"></span></p>
+              <p>Billede:<span id="summary_image"></span></p>
+              <p>Navn:<span id="summary_name"></span></p>
+              <p>Telefonnummer<span id="summary_phone"></span></p>
+              <p>Mail:<span id="summary_mail"></span></p>
+            </div>
+          </section>
+        </section>
         <div class="teaser2">
           <a href="gallery.html">
-            <img
-              src="images/gallery_webp/teaser_gallery.webp"
-              alt="lamper"
-            />
+            <img src="images/gallery_webp/teaser_gallery.webp" alt="lamper" />
             <h2>Få smag for udvalget!</h2>
           </a>
         </div>
@@ -101,4 +159,5 @@
   </body>
   <script src="js/login.js"></script>
   <script src="js/burgermenu.js"></script>
+  <script src="js/form.js"></script>
 </html>
