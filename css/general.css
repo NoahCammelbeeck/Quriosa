@@ -63,7 +63,7 @@ p {
   padding: 10px;
   transition: 0.3s;
   &:hover {
-    background-color: var(--cta-color);
+    background-color: var(--secondary-green);
     color: var(--prime-green);
   }
 }
