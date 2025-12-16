@@ -54,6 +54,7 @@ p {
   border: 2px solid var(--secondary-green);
   width: 90%;
   padding: 10px;
+  justify-self: center;
 }
 
 .teaser1 {
