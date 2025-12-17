@@ -54,6 +54,7 @@ p {
   border: 2px solid var(--secondary-green);
   width: 90%;
   padding: 10px;
+  justify-self: center;
 }
 
 .teaser1 {
@@ -62,7 +63,7 @@ p {
   padding: 10px;
   transition: 0.3s;
   &:hover {
-    background-color: var(--cta-color);
+    background-color: var(--secondary-green);
     color: var(--prime-green);
   }
 }
@@ -74,4 +75,9 @@ p {
 a {
   text-decoration: none;
   color: black;
+}
+
+.recall{
+  background-color: var(--secondary-green);
+  border-color: var(--details-color);
 }
