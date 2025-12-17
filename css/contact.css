@@ -9,7 +9,84 @@ body {
   background-size: cover;
 }
 
-.infotext {
-  margin-bottom: 28em;
-  margin-top: 5em;
+main {
+  max-width: 70%;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  margin-top: 2em;
+  width: fit-content;
+  background-color: var(--secondary-green);
+  border: solid black 1px;
+  padding: 10px;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contactcard {
+  background-color: var(--secondary-green);
+  justify-self: center;
+  justify-content: center;
+  width: 75%;
+}
+.contactcard a {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: var(--details-green);
+  color: white;
+  font-family: var(--p-font);
+}
+
+.contactcard p {
+  font-family: var(--p-font);
+  padding: 5px;
+}
+
+.contactcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-self: center;
+  justify-content: center;
+}
+.company h1 {
+  width: 100%;
+}
+
+.contactcard img {
+  width: 50%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  margin: 0 auto;
+  color: var(--cta-color);
+}
+
+.headline h1 {
+  padding: 5px;
+  background-color: var(--details-green);
+  font-family: var(--cta-font);
+  border: 3px solid var(--secondary-green);
+  border-radius: 2px;
 }
