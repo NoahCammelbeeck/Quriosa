@@ -76,3 +76,8 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.recall{
+  background-color: var(--secondary-green);
+  border-color: var(--details-color);
+}
